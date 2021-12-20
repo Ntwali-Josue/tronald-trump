@@ -1,18 +1,7 @@
 {
-  "name": "react-capstone-project",
-  "homepage": "https://github.com/Ntwali-Josue/react-capstone-project",
-  "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ntwali-Josue/react-capstone-project.git"
-  },
-  "author": "karangwa ntwali josue",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ntwali-Josue/react-capstone-project/issues"
-  },
+  "name": "capstone",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
