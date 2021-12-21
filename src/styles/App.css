@@ -1,3 +1,23 @@
 .App {
   margin: 0;
 }
+
+.details-container {
+  background-color: #5689e5;
+  height: 85vh;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding-top: 15px;
+}
+
+.back-btn {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding-left: 10%;
+}
