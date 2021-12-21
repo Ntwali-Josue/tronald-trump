@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applymiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import quotesReducer from './reducers/quotes';
@@ -9,7 +9,7 @@ const reducer = combineReducers({
 
 const store = createStore(
   reducer,
-  applymiddleware(thunk, logger),
+  applyMiddleware(thunk, logger),
 );
 
 export default store;
