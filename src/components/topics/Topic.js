@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Topic = ({ topicName }) => (
   <>
-    <li>
+    <li className="topic-item">
       <div>
         <h1>{topicName}</h1>
       </div>
