@@ -50,14 +50,16 @@ const topicsArray = [
 const Home = () => {
   const handlePickTopic = (topic) => topics(topic);
   return (
-    <div>
-      {
-      topicsArray.map((topic) => (
-        <NavLink key={topic.id} to="/details" onClick={() => handlePickTopic(topic.name)}>
-          <Topic topicName={topic.name} />
-        </NavLink>
-      ))
-    }
+    <div className="topics-container">
+      <ul className="topic-section">
+        {
+          topicsArray.map((topic) => (
+            <NavLink className="topic-route" key={topic.id} to="/details" onClick={() => handlePickTopic(topic.name)}>
+              <Topic topicName={topic.name} />
+            </NavLink>
+          ))
+        }
+      </ul>
     </div>
   );
 };
