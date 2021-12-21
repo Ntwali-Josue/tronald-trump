@@ -1,0 +1,27 @@
+.nav-header {
+  background-color: #4369b2;
+  margin: 0;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 0 0 #44669b;
+  position: relative;
+  padding: 0 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.title {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
