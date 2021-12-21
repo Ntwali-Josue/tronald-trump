@@ -2,6 +2,21 @@
   margin: 0;
 }
 
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.topic-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .details-container {
   background-color: #5689e5;
   height: 85vh;
