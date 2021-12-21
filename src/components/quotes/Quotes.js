@@ -18,7 +18,6 @@ const Quotes = () => {
 
   return (
     <div>
-      yooooooo
       {allQoutes}
     </div>
   );
