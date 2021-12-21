@@ -1,10 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../styles/App.css';
-import Coins from './Coins';
+import NavBar from './NavBar';
+import Coins from './Coins/Coins';
 
 const App = () => (
   <div className="App">
-    <h1>Hey</h1>
-    <Coins />
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Coins />} />
+      </Routes>
+    </Router>
   </div>
 );
 
