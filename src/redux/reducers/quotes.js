@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+const topics = (topic) => topic;
 const FETCH_QUOTES = 'fetch/trump/quotes';
-const fetchApi = 'https://www.tronalddump.io/search/quote?query=women';
+const fetchApi = `https://www.tronalddump.io/search/quote?query=${topics('money')}`;
 
 export const fetchQuotes = () => async (dispatch) => {
   const res = await axios.get(fetchApi);
