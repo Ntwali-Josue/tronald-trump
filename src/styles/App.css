@@ -2,6 +2,41 @@
   margin: 0;
 }
 
+.topics-container {
+  width: 100%;
+  height: 500px;
+}
+
+.topic-section {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.topic-route {
+  width: 50%;
+}
+
+.topics-container ul a:nth-child(4n+1) {
+  background-color: #4066ad;
+  color: white;
+}
+
+.topics-container ul a:nth-child(4n) {
+  background-color: #4066ad;
+  color: white;
+}
+
+.topics-container ul a:nth-child(4n-1) {
+  background-color: #4872c2;
+  color: white;
+}
+
+.topics-container ul a:nth-child(4n-2) {
+  background-color: #4872c2;
+  color: white;
+}
+
 ul {
   text-decoration: none;
   list-style-type: none;
