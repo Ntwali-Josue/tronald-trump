@@ -1,5 +1,6 @@
 import { BrowserRouter as Routers, Routes, Route } from 'react-router-dom';
 import '../styles/App.css';
+import Home from './topics/Topics';
 import Quotes from './quotes/Quotes';
 import NavBar from './NavBar';
 
@@ -8,7 +9,8 @@ const App = () => (
     <Routers>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Quotes />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<Quotes />} />
       </Routes>
     </Routers>
   </div>
