@@ -1,8 +1,8 @@
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import { NavLink } from 'react-router-dom';
-
-const topics = (topic) => topic;
+import Topic from './Topic';
+import { topics } from '../../redux/reducers/quotes';
 
 const topicsArray = [
   {
@@ -47,14 +47,19 @@ const topicsArray = [
   },
 ];
 
-const Home = () => (
-  <div>
-    {
+const Home = () => {
+  const handlePickTopic = (topic) => topics(topic);
+  return (
+    <div>
+      {
       topicsArray.map((topic) => (
-        <NavLink key={uuidv4()} to="/details" onClick={() => topics(topic)}>{topic}</NavLink>
+        <NavLink key={topic.id} to="/details" onClick={() => handlePickTopic(topic.name)}>
+          <Topic topicName={topic.name} />
+        </NavLink>
       ))
     }
-  </div>
-);
+    </div>
+  );
+};
 
 export default Home;
