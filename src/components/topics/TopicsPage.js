@@ -17,7 +17,7 @@ const Home = () => {
         {
           topicsArray.map((topic) => (
             <NavLink className="topic-route" key={topic.id} to="/details" onClick={() => handlePickTopic(topic.name)}>
-              <Topic topicName={topic.name} image={topic.images} />
+              <Topic topicName={topic.name} image={topic.images} count={topic.count} />
             </NavLink>
           ))
         }
