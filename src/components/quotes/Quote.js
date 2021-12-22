@@ -2,8 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Quote = ({ quoteValue }) => (
-  <div>
-    <p>{quoteValue}</p>
+  <div className="qoutes">
+    <p className="qoute">
+      &rdquo;
+      {quoteValue}
+      &rdquo;
+    </p>
   </div>
 );
 Quote.propTypes = {
