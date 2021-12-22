@@ -1,8 +1,9 @@
 import React from 'react';
 // import { v4 as uuidv4 } from 'uuid';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Topic from './Topic';
-import { topics } from '../../redux/reducers/quotes';
+import { fetchQuotes, pickTopic } from '../../redux/reducers/quotes';
 
 const topicsArray = [
   {
@@ -48,7 +49,22 @@ const topicsArray = [
 ];
 
 const Home = () => {
-  const handlePickTopic = (topic) => topics(topic);
+  const dispatch = useDispatch();
+  const status = useSelector((state) => state.quotes.status);
+  console.log('hhhhhhhhhhhhhhh', status);
+  const handlePickTopic = (topic) => {
+    dispatch(pickTopic('fetched'));
+    dispatch(fetchQuotes(topic));
+    // if (status === 'fetched') {
+    //   console.log('ndagaswiiiiiiiii');
+    //   dispatch(fetchQuotes(topic));
+    // } else {
+    //   console.log('wakisheeeeee');
+    // }
+  };
+  // useEffect(() => {
+  //   handlePickTopic();
+  // }, []);
   return (
     <div className="topics-container">
       <ul className="topic-section">
