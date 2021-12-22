@@ -3,17 +3,20 @@ import axios from 'axios';
 const FETCH_QUOTES = 'fetch/trump/quotes';
 const PICK_TOPIC = 'pick/trump/topics';
 
-export const topics = (topic) => ({
-  type: PICK_TOPIC,
-  topic,
-});
+const initialState = {
+  status: '',
+  fetchedQoutes: [],
+};
+// let topical = 'women';
+export const topics = (topic) => topic;
 
-const fetchApi = `https://www.tronalddump.io/search/quote?query=${topics('women')}`;
+const fetchApi = 'https://www.tronalddump.io/search/quote?query=';
 
-export const fetchQuotes = () => async (dispatch) => {
+export const fetchQuotes = (topic) => async (dispatch) => {
   try {
-    const res = await axios.get(fetchApi);
+    const res = await axios.get(`${fetchApi}${topics(topic)}`);
     const result = res.data._embedded.quotes;
+    console.log(result);
     const fetchedQoutes = [];
     Object.entries(result).forEach(([key, value]) => {
       const quotes = {
@@ -23,6 +26,7 @@ export const fetchQuotes = () => async (dispatch) => {
       };
       fetchedQoutes.push(quotes);
     });
+    console.log(fetchedQoutes);
     dispatch({
       type: FETCH_QUOTES,
       payload: fetchedQoutes,
@@ -32,12 +36,19 @@ export const fetchQuotes = () => async (dispatch) => {
   }
 };
 
-const reducer = (state = [], action) => {
+export const pickTopic = (payload) => ({
+  type: PICK_TOPIC,
+  payload,
+});
+
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_QUOTES:
-      return [...action.payload];
-    case PICK_TOPIC:
-      return state;
+      return { ...state, fetchedQoutes: action.payload };
+    case PICK_TOPIC: {
+      // const { status } = state;
+      return { ...state, status: action.payload };
+    }
     default:
       return state;
   }
