@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const FETCH_QUOTES = 'fetch/trump/quotes';
-const PICK_TOPIC = 'pick/trump/topics';
 
 const initialState = {
   status: '',
@@ -29,18 +28,10 @@ export const fetchQuotes = (topic) => async (dispatch) => {
   });
 };
 
-export const pickTopic = (payload) => ({
-  type: PICK_TOPIC,
-  payload,
-});
-
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_QUOTES:
       return { ...state, fetchedQoutes: action.payload };
-    case PICK_TOPIC: {
-      return { ...state, status: action.payload };
-    }
     default:
       return state;
   }
