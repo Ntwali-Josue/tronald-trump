@@ -3,7 +3,6 @@ import axios from 'axios';
 const FETCH_QUOTES = 'fetch/trump/quotes';
 
 const initialState = {
-  status: '',
   fetchedQoutes: [],
 };
 export const topics = (topic) => topic;
