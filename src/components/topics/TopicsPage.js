@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Topic from './Topic';
-import { fetchQuotes, pickTopic } from '../../redux/reducers/quotes';
+import { fetchQuotes } from '../../redux/reducers/quotes';
 
 const topicsArray = [
   {
@@ -50,7 +50,6 @@ const topicsArray = [
 const Home = () => {
   const dispatch = useDispatch();
   const handlePickTopic = (topic) => {
-    dispatch(pickTopic('fetched'));
     dispatch(fetchQuotes(topic));
   };
 
