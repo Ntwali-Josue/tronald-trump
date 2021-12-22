@@ -7,7 +7,6 @@ const Quote = ({ quoteValue }) => (
   </div>
 );
 Quote.propTypes = {
-  // quoteID: PropTypes.string.isRequired,
   quoteValue: PropTypes.string.isRequired,
 };
 
