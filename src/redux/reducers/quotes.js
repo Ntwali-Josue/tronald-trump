@@ -7,7 +7,6 @@ const initialState = {
   status: '',
   fetchedQoutes: [],
 };
-// let topical = 'women';
 export const topics = (topic) => topic;
 
 const fetchApi = 'https://www.tronalddump.io/search/quote?query=';
@@ -26,13 +25,15 @@ export const fetchQuotes = (topic) => async (dispatch) => {
       };
       fetchedQoutes.push(quotes);
     });
-    console.log(fetchedQoutes);
     dispatch({
       type: FETCH_QUOTES,
       payload: fetchedQoutes,
     });
   } catch (error) {
-    console.log(error);
+    const errorMessage = error;
+    return {
+      errorMessage,
+    };
   }
 };
 
