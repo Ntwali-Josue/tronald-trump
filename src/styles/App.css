@@ -96,3 +96,8 @@ ul {
   display: flex;
   justify-content: right;
 }
+
+.count-quotes {
+  font-family: sans-serif;
+  text-decoration: underline;
+}
