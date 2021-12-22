@@ -59,7 +59,7 @@ ul {
 }
 
 .details-container {
-  background-color: #5689e5;
+  background-color: #4e7aca;
   color: white;
   text-align: center;
   font-size: 25px;
@@ -80,4 +80,13 @@ ul {
 .image {
   width: 80%;
   height: 200px;
+}
+
+.qoutes {
+  /* width: 90%; */
+  text-align: justify;
+  padding: 0 20px;
+  margin: 0 20px;
+  background-color: #4369b2;
+  border-radius: 10px;
 }
