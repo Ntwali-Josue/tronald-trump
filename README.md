@@ -1,65 +1,58 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Tronald Trump
 
-> One paragraph statement about the project.
+> This app helps the user to navigate through different kinds of trump's quotes about different topics.
 
-![screenshot](./app_screenshot.png)
+![image](https://user-images.githubusercontent.com/58233753/147159759-db0ec606-7121-45e8-b4c1-c476cf1a830d.png)  ![image](https://user-images.githubusercontent.com/58233753/147160107-90093e6b-d203-4f06-8a0e-1a6797d994f5.png)
 
-Additional description about the project and its features.
+The user is able to choose any topic and get all quotes that trump said regarding the choosen topic. The user also is able to go back to the home page/topics page after finishing reading the qoutes.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JAVASCRIPT, CSS
+- REACT & REDUX
+- GIT, HEROKU, LINTERS, API.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://react-capstone-week.herokuapp.com/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites 📌
+- `Node.js` installed.
+- `Git` installed.
 
-### Setup
+### Setup 🔂 
+- Clone this repository by running `git clone https://github.com/Ntwali-Josue/react-capstone-project.git` in your terminal.
 
-### Install
+### Install ⚙️
+- Run `npm install` in your terminal to install the dependencies.
 
-### Usage
+### Usage 💻
+- Run `npm start` for webpack to run and open the application in the browser.
 
-### Run tests
+### Run tests 🧪
+- Run `npm test` for running the tests found in `__tests__` folder.
 
-### Deployment
+### Deployment 🚀
+- Run `npm run build` for running the builds folder
+- Deploy using [Heroku](https://dashboard.heroku.com) or [Netlify](https://www.netlify.com/)
 
+👤 **Author**
 
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Ntwali-Josue](https://github.com/Ntwali-Josue)
+- Twitter: [JosueNtwali](https://twitter.com/JosueNtwali)
+- LinkedIn: [karangwa](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Ntwali-Josue/react-capstone-project/issues/).
 
 ## Show your support
 
@@ -67,8 +60,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
+- Credits goes to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for providing the designs used.
 - etc
 
 ## 📝 License
