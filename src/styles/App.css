@@ -52,6 +52,12 @@ ul {
   align-items: center;
 }
 
+.topic-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .details-container {
   background-color: #5689e5;
   color: white;
@@ -69,4 +75,9 @@ ul {
   display: flex;
   justify-content: start;
   padding-left: 10%;
+}
+
+.image {
+  width: 80%;
+  height: 200px;
 }
