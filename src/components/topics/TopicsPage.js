@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Topic from './Topic';
 import { fetchQuotes } from '../../redux/reducers/quotes';
 import topicsArray from './topicsArray';
+import Search from './Search';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ const Home = () => {
 
   return (
     <div className="topics-container">
+      <Search />
       <ul className="topic-section">
         {
           topicsArray.map((topic) => (
