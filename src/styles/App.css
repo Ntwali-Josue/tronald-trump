@@ -10,7 +10,7 @@
 .topic-section {
   display: flex;
   flex-wrap: wrap;
-  color: white;
+  color: #fff;
 }
 
 .topic-route {
@@ -19,22 +19,22 @@
 
 .topics-container ul a:nth-child(4n+1) {
   background-color: #4066ad;
-  color: white;
+  color: #fff;
 }
 
 .topics-container ul a:nth-child(4n) {
   background-color: #4066ad;
-  color: white;
+  color: #fff;
 }
 
 .topics-container ul a:nth-child(4n-1) {
   background-color: #4872c2;
-  color: white;
+  color: #fff;
 }
 
 .topics-container ul a:nth-child(4n-2) {
   background-color: #4872c2;
-  color: white;
+  color: #fff;
 }
 
 ul {
@@ -60,7 +60,7 @@ ul {
 
 .details-container {
   background-color: #4e7aca;
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 25px;
   display: flex;
@@ -100,4 +100,33 @@ ul {
 .count-quotes {
   font-family: sans-serif;
   text-decoration: underline;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.search {
+  background-color: #4e7aca;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.search select {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.search input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 16px;
+  background-color: #2d58a7;
+  color: #fff;
+  cursor: pointer;
 }
