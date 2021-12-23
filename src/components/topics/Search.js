@@ -1,17 +1,11 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import topicsArray from './topicsArray';
-// import Topic from './Topic';
 import { filterTopicNames } from '../../redux/reducers/quotes';
-// import SearchPage from './SearchPage';
 
 const Search = () => {
   const dispatch = useDispatch();
-  // const handlePickTopic = (topic) => {
-  //   dispatch(fetchQuotes(topic));
-  // };
   const navigate = useNavigate();
 
   const handleFilterTopic = (e) => {
@@ -31,9 +25,7 @@ const Search = () => {
           </option>
         ))}
       </select>
-      {/* <NavLink to="/search"> */}
       <input type="submit" value="Search" />
-      {/* </NavLink> */}
     </div>
   );
 };
