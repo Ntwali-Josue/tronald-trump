@@ -1,11 +1,14 @@
 import axios from 'axios';
+import topicsArray from '../../components/topics/topicsArray';
 
 const FETCH_QUOTES = 'fetch/trump/quotes';
+const FILTER_TOPICS = 'filter/topics';
 
 const initialState = {
   countQuotes: 0,
   totalQuotes: 0,
   fetchedQoutes: [],
+  filteredTopics: {},
 };
 export const topics = (topic) => topic;
 
@@ -31,6 +34,14 @@ export const fetchQuotes = (topic) => async (dispatch) => {
   });
 };
 
+export const filterTopicNames = (e) => (dispatch) => {
+  const filteredTopics = topicsArray.find((topic) => e.target.value === topic.name);
+  dispatch({
+    type: FILTER_TOPICS,
+    payload: filteredTopics,
+  });
+};
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_QUOTES:
@@ -39,6 +50,12 @@ const reducer = (state = initialState, action) => {
         countQuotes: action.payload.countQuotes,
         totalQuotes: action.payload.totalQuotes,
         fetchedQoutes: action.payload.fetchedQoutes,
+        filteredTopics: state.filteredTopics,
+      };
+    case FILTER_TOPICS:
+      return {
+        ...state,
+        filteredTopics: action.payload,
       };
     default:
       return state;
