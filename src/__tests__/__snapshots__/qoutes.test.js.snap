@@ -59,6 +59,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              10 Qoutes
+            </span>
           </div>
         </li>
       </a>
@@ -85,6 +90,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              10 Qoutes
+            </span>
           </div>
         </li>
       </a>
@@ -111,6 +121,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              10 Qoutes
+            </span>
           </div>
         </li>
       </a>
@@ -137,6 +152,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              10 Qoutes
+            </span>
           </div>
         </li>
       </a>
@@ -163,6 +183,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              10 Qoutes
+            </span>
           </div>
         </li>
       </a>
@@ -189,6 +214,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              2 Qoutes
+            </span>
           </div>
         </li>
       </a>
@@ -215,6 +245,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              10 Qoutes
+            </span>
           </div>
         </li>
       </a>
@@ -241,6 +276,11 @@ exports[`pages test snapshots testing qoutes page 1`] = `
                 src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right-2.png"
               />
             </h1>
+            <span
+              className="qoutes-number"
+            >
+              10 Qoutes
+            </span>
           </div>
         </li>
       </a>
