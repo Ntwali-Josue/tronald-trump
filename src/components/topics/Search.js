@@ -25,7 +25,6 @@ const Search = () => {
           </option>
         ))}
       </select>
-      <input type="submit" value="Search" />
     </div>
   );
 };

@@ -119,14 +119,3 @@ ul {
   border-radius: 5px;
   margin: 0 10px;
 }
-
-.search input {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin: 0 10px;
-  font-size: 16px;
-  background-color: #2d58a7;
-  color: #fff;
-  cursor: pointer;
-}
