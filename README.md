@@ -4,7 +4,8 @@
 
 > This app helps the user to navigate through different kinds of trump's quotes about different topics.
 
-![image](https://user-images.githubusercontent.com/58233753/147159759-db0ec606-7121-45e8-b4c1-c476cf1a830d.png)
+![image](https://user-images.githubusercontent.com/58233753/147383114-c1118c89-b689-4d9a-972f-9acc30937c7c.png)
+
 
 The user is able to choose any topic and get all quotes that trump said regarding the choosen topic. The user also is able to go back to the home page/topics page after finishing reading the qoutes.
 
